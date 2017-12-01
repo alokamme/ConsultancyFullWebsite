@@ -4,23 +4,23 @@ Features include - Cross device compatibility, slider, hero unit, tab slider, ma
 
 Things you may want to cover:
 
-* Rails version: 5.1
+*Rails version: 5.1
 
 * System dependencies
 
-Bourbon 5.0.1.beta
-Neat 2.0
-Bitters 1.0
+*Bourbon 5.0.1.beta
+*Neat 2.0
+*Bitters 1.0
 
 * Additional Gems
-font-awesome
-aws-sdk-v1
-fog
-imagemagic
-devise
+*font-awesome
+*aws-sdk-v1
+*fog
+*imagemagic
+*devise
 
 * Database
-sqlite
+*sqlite
 
 
 * How to run:
