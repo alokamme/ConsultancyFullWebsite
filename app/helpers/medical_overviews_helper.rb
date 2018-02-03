@@ -1,0 +1,2 @@
+module MedicalOverviewsHelper
+end

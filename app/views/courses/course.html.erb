@@ -1,0 +1,169 @@
+<!--<section id="cd-intro">
+	<div id="cd-intro-background"></div>
+	<div id="cd-intro-tagline">
+		<h1>Admission Time - Courses</h1>	
+	</div> 
+</section>--><!-- #cd-intro -->
+<main style="background-color: #F5FFFA">
+<h1>hello courses page !</h1>
+<div class="hero">
+  <div class="hero-content">
+    <%= image_tag("card 2.gif", :class => "hero-logo") %>
+    
+  </div>
+</div>
+ <div class="ui horizontal divider"> </div>
+<div class="ui breadcrumb">
+  <%= link_to "Home", index_path, class: "section" %>
+  <i class="right chevron icon divider"></i>
+  <i class="right arrow icon divider"></i>
+  <div class="active section">Medical Overview</div>
+</div>
+<div class="ui horizontal divider"> </div>
+<div style=" background-color: #f0f0f0; border-width: thick thin thin thin; margin-left: 20px; margin-right: 20px">
+  <div data-tab-wrapper>
+  <ul class="tab-list" data-tablist>
+    <li>
+      <a href="#tab-1" class="tab-link">Overview</a><i class="fa fa-stethoscope"></i>
+    </li>
+    <li>
+      <a href="#tab-2" class="tab-link">Courses</a><i class="fa fa-gears"></i>
+    </li>
+    <li>
+      <a href="#tab-3" class="tab-link">Countries</a><i class="fa fa-hourglass-half"></i>
+    </li>
+    <li>
+      <a href="#tab-4" class="tab-link">Apply</a><i class="fa fa-paperclip"></i>
+    </li>
+  </ul>
+
+  <section id="tab-1" class="tab-panel" data-tabpanel>
+   <div class="ui stacked segment">
+<div class="ui one column grid">
+  <div class="column">
+    <div class="ui raised segment">
+      <a class="ui blue ribbon label">Dear Aspirants</a>
+      
+      <p><p>Have you completed 12th Science with PCB subjects? Do you want to pursue a good medical course? If yes, this section will be of help to you. Here, you will be reading about the best medical courses abroad and in India after 12th.</p>
+   <p>What’s the first thing that comes to your mind when talking about medical courses? MBBS and BDS? That’s it? Well, there are many more medical courses, which you are eligible to pursue after 12th Science!</p>
+   <p>Medical courses can be pursued by students who have completed 12th Science with PCB subjects. PCB subjects together makes the ‘Biology group’. Biology group is also popularly known as ‘B’ group among students.</p>
+   <p>
+     Medical courses can be pursued by students who have completed 12th Science with PCB subjects. PCB subjects together makes the ‘Biology group’. Biology group is also popularly known as ‘B’ group among students.
+   </p>Explore more in courses tab or send an enquiry by registering yourself!</p>
+   <p>Best of luck!</p>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <section id="tab-2" class="tab-panel" data-tabpanel>
+    <div class="ui horizontal segments">
+  <div class="ui segment">
+    <h4 class="ui header">MBBS</h4>
+    <p>It is probably the most popular medical course available in India. MBBS course is 5½ years long. The academic program is 4½ year long. At the end, there’s a 1 year long internship program. MBBS is the minimum qualification required to practice as a Doctor in India.</p>
+  </div>
+  <div class="ui segment">
+    <h4 class="ui header">BDS</h4>
+    <p>BDS stands for Bachelor of Dental Surgery. To become a Dentist, one must complete this academic program. This course is 5 years long (including internship).</p>
+  </div>
+  <div class="ui segment">
+    <h4 class="ui header">B.SC. NURSING</h4>
+    <p>This course will help you become a Registered Nurse (RN)! The course duration is 3-4 years. The academic program consists of classroom lectures and practical training.</p>
+  </div>
+</div>
+<div class="ui horizontal segments">
+  <div class="ui segment">
+    <h4 class="ui header">B.PHARM. (BACHELOR OF PHARMACY)</h4>
+    <p>B.Pharm. Degree will help you become a licensed chemist in India. The course duration is 4 years. The course primarily focuses on subjects like pharmacy, chemistry, biology and healthcare.</p>
+  </div>
+  <div class="ui segment">
+    <h4 class="ui header">BAMS</h4>
+    <p>BAMS stands for Bachelor of Ayurvedic Medicine and Surgery. Unlike MBBS, this course focuses on concepts of Ayurveda and Ayurvedic medicine. After completing this course, one will earn the title of Doctor (Ayurveda). The course is 5½ years long.</p>
+  </div>
+  <div class="ui segment">
+    <h4 class="ui header">BHMS</h4>
+    <p>BHMS stands for Bachelor of Homeopathic Medicine and Surgery. This discipline aims at treating patients using homeopathic methods and medicine. After completing this course, one will earn the title of Doctor (Homeopathic). The course is 5½ years long</p>
+  </div>
+</div>
+ <div class="ui grey segment">Top MBBS Destinations
+  <%= link_to "Russia", russia_path, class: 'ui red tag label'%>
+ <%= link_to "Ukraine", ukraine_path, class: 'ui teal tag label'%>
+</div>
+
+  </section>
+
+  <section id="tab-3" class="tab-panel" data-tabpanel>
+    <div class="ui clearing segment">
+  <div class="ui right floated button"><%= link_to "Explore", russia_path%></div>
+  <div class="ui left floated segment">
+  <%= image_tag("russia1.png") %> Russia
+</div>
+</div>
+<div class="ui clearing segment">
+  <div class="ui right floated button"><%= link_to "Explore", ukraine_path%></div>
+  <div class="ui left floated segment">
+  <%= image_tag("ukraine1.png") %> Ukraine
+</div>
+</div>
+<div class="ui clearing segment">
+  <div class="ui right floated button"><%= link_to "Explore", china_path%></div>
+  <div class="ui left floated segment">
+  <%= image_tag("china1.png") %> China
+</div>
+</div>
+<div class="ui clearing segment">
+  <div class="ui right floated button"><%= link_to "Explore", bangladesh_path%></div>
+  <div class="ui left floated segment">
+  <%= image_tag("bangladesh1.png") %> Bangladesh
+</div>
+</div>
+<div class="ui clearing segment">
+  <div class="ui right floated button">Explore</div>
+  <div class="ui left floated segment">
+  <%= image_tag("kyrgyzstan1.png") %> Kyrgyzstan
+</div>
+</div>
+<div class="ui clearing segment">
+  <div class="ui right floated button">Explore</div>
+  <div class="ui left floated segment">
+  <%= image_tag("kazakhstan1.png") %> Kazakhstan
+</div>
+</div>
+<div class="ui clearing segment">
+  <div class="ui right floated button">Explore</div>
+  <div class="ui left floated segment">
+  <%= image_tag("philippines1.png") %> Philippines
+</div>
+</div>
+<div class="ui clearing segment">
+  <div class="ui right floated button">Explore</div>
+  <div class="ui left floated segment">
+  <%= image_tag("nepal1.png") %> Nepal
+</div>
+</div>
+<div class="ui clearing segment">
+  <div class="ui right floated button">Explore</div>
+  <div class="ui left floated segment">
+  <%= image_tag("malaysia1.png") %> Malaysia
+</div>
+</div>
+  </section>
+   <section id="tab-4" class="tab-panel" data-tabpanel>
+
+    <div class="ui stacked segment">
+  <p>Send an enquiry by registering or Explore more !</p>
+</div>
+      <div class="ui buttons">
+  <button class="ui button">Explore</button>
+  <div class="or"></div>
+  <button class="ui positive button"><%= link_to "Register", new_item_path, class: 'link-to-text-color' %></button>
+</div>
+  </section>
+</div>
+</div>
+</div>
+</main>
+</br>
+<main>
+ <%= render 'layouts/footer' %>
+ </main><!-- cd-content -->

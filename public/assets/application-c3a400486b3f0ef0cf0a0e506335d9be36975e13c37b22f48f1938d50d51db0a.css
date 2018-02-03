@@ -1,0 +1,1540 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ */
+/* line 4, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_buttons.scss */
+button, [type='button'], [type='reset'], [type='submit'] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #1565c0;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 150ms ease;
+  transition: background-color 150ms ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+/* line 25, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_buttons.scss */
+button:hover, [type='button']:hover, [type='reset']:hover, [type='submit']:hover {
+  background-color: #11519a;
+  color: #fff;
+}
+/* line 30, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_buttons.scss */
+button:focus, [type='button']:focus, [type='reset']:focus, [type='submit']:focus {
+  outline: 3px solid rgba(21, 101, 192, 0.6);
+  outline-offset: 2px;
+}
+/* line 35, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_buttons.scss */
+button:disabled, [type='button']:disabled, [type='reset']:disabled, [type='submit']:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+/* line 39, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_buttons.scss */
+button:disabled:hover, [type='button']:disabled:hover, [type='reset']:disabled:hover, [type='submit']:disabled:hover {
+  background-color: #1565c0;
+}
+
+/* line 4, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_forms.scss */
+fieldset {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 11, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_forms.scss */
+legend {
+  font-weight: 600;
+  margin-bottom: 0.375em;
+  padding: 0;
+}
+
+/* line 17, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_forms.scss */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.375em;
+}
+
+/* line 23, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_forms.scss */
+input,
+select,
+textarea {
+  display: block;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+}
+
+/* line 31, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_forms.scss */
+[type='color'], [type='date'], [type='datetime'], [type='datetime-local'], [type='email'], [type='month'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='time'], [type='url'], [type='week'], input:not([type]), textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 0.75em;
+  padding: 0.5em;
+  -webkit-transition: border-color 150ms ease;
+  transition: border-color 150ms ease;
+  width: 100%;
+}
+/* line 43, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_forms.scss */
+[type='color']:hover, [type='date']:hover, [type='datetime']:hover, [type='datetime-local']:hover, [type='email']:hover, [type='month']:hover, [type='number']:hover, [type='password']:hover, [type='search']:hover, [type='tel']:hover, [type='text']:hover, [type='time']:hover, [type='url']:hover, [type='week']:hover, input:not([type]):hover, textarea:hover {
+  border-color: #b1b1b1;
+}
+/* line 47, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_forms.scss */
+[type='color']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='email']:focus, [type='month']:focus, [type='number']:focus, [type='password']:focus, [type='search']:focus, [type='tel']:focus, [type='text']:focus, [type='time']:focus, [type='url']:focus, [type='week']:focus, input:not([type]):focus, textarea:focus {
+  border-color: #1565c0;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(21, 101, 192, 0.7);
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(21, 101, 192, 0.7);
+  outline: none;
+}
+/* line 53, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_forms.scss */
+[type='color']:disabled, [type='date']:disabled, [type='datetime']:disabled, [type='datetime-local']:disabled, [type='email']:disabled, [type='month']:disabled, [type='number']:disabled, [type='password']:disabled, [type='search']:disabled, [type='tel']:disabled, [type='text']:disabled, [type='time']:disabled, [type='url']:disabled, [type='week']:disabled, input:not([type]):disabled, textarea:disabled {
+  background-color: #f2f2f2;
+  cursor: not-allowed;
+}
+/* line 57, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_forms.scss */
+[type='color']:disabled:hover, [type='date']:disabled:hover, [type='datetime']:disabled:hover, [type='datetime-local']:disabled:hover, [type='email']:disabled:hover, [type='month']:disabled:hover, [type='number']:disabled:hover, [type='password']:disabled:hover, [type='search']:disabled:hover, [type='tel']:disabled:hover, [type='text']:disabled:hover, [type='time']:disabled:hover, [type='url']:disabled:hover, [type='week']:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover {
+  border: 1px solid #ddd;
+}
+/* line 62, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_forms.scss */
+[type='color']::-webkit-input-placeholder, [type='date']::-webkit-input-placeholder, [type='datetime']::-webkit-input-placeholder, [type='datetime-local']::-webkit-input-placeholder, [type='email']::-webkit-input-placeholder, [type='month']::-webkit-input-placeholder, [type='number']::-webkit-input-placeholder, [type='password']::-webkit-input-placeholder, [type='search']::-webkit-input-placeholder, [type='tel']::-webkit-input-placeholder, [type='text']::-webkit-input-placeholder, [type='time']::-webkit-input-placeholder, [type='url']::-webkit-input-placeholder, [type='week']::-webkit-input-placeholder, input:not([type])::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #858585;
+}
+[type='color']:-ms-input-placeholder, [type='date']:-ms-input-placeholder, [type='datetime']:-ms-input-placeholder, [type='datetime-local']:-ms-input-placeholder, [type='email']:-ms-input-placeholder, [type='month']:-ms-input-placeholder, [type='number']:-ms-input-placeholder, [type='password']:-ms-input-placeholder, [type='search']:-ms-input-placeholder, [type='tel']:-ms-input-placeholder, [type='text']:-ms-input-placeholder, [type='time']:-ms-input-placeholder, [type='url']:-ms-input-placeholder, [type='week']:-ms-input-placeholder, input:not([type]):-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #858585;
+}
+[type='color']::-ms-input-placeholder, [type='date']::-ms-input-placeholder, [type='datetime']::-ms-input-placeholder, [type='datetime-local']::-ms-input-placeholder, [type='email']::-ms-input-placeholder, [type='month']::-ms-input-placeholder, [type='number']::-ms-input-placeholder, [type='password']::-ms-input-placeholder, [type='search']::-ms-input-placeholder, [type='tel']::-ms-input-placeholder, [type='text']::-ms-input-placeholder, [type='time']::-ms-input-placeholder, [type='url']::-ms-input-placeholder, [type='week']::-ms-input-placeholder, input:not([type])::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  color: #858585;
+}
+[type='color']::placeholder, [type='date']::placeholder, [type='datetime']::placeholder, [type='datetime-local']::placeholder, [type='email']::placeholder, [type='month']::placeholder, [type='number']::placeholder, [type='password']::placeholder, [type='search']::placeholder, [type='tel']::placeholder, [type='text']::placeholder, [type='time']::placeholder, [type='url']::placeholder, [type='week']::placeholder, input:not([type])::placeholder, textarea::placeholder {
+  color: #858585;
+}
+
+/* line 67, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_forms.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 71, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_forms.scss */
+[type="checkbox"],
+[type="radio"] {
+  display: inline;
+  margin-right: 0.375em;
+}
+
+/* line 77, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_forms.scss */
+[type="file"] {
+  margin-bottom: 0.75em;
+  width: 100%;
+}
+
+/* line 82, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_forms.scss */
+select {
+  margin-bottom: 0.75em;
+  width: 100%;
+}
+
+/* line 91, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_forms.scss */
+[type="checkbox"]:focus,
+[type="radio"]:focus,
+[type="file"]:focus,
+select:focus {
+  outline: 3px solid rgba(21, 101, 192, 0.6);
+  outline-offset: 2px;
+}
+
+/* html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+} */
+/* line 1, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_lists.scss */
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_lists.scss */
+dl {
+  margin: 0;
+}
+
+/* line 12, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_lists.scss */
+dt {
+  font-weight: 600;
+  margin: 0;
+}
+
+/* line 17, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_lists.scss */
+dd {
+  margin: 0;
+}
+
+/* line 1, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_media.scss */
+figure {
+  margin: 0;
+}
+
+/* line 5, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_media.scss */
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+/* line 1, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  table-layout: fixed;
+  text-align: left;
+  width: 100%;
+}
+
+/* line 9, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_tables.scss */
+thead {
+  line-height: 1.2;
+  vertical-align: bottom;
+}
+
+/* line 14, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_tables.scss */
+tbody {
+  vertical-align: top;
+}
+
+/* line 18, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_tables.scss */
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 22, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_tables.scss */
+th {
+  font-weight: 600;
+}
+
+/* line 26, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_tables.scss */
+th,
+td {
+  padding: 0.75em 0.75em 0.75em 0;
+}
+
+/* line 2, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_typography.scss */
+html {
+  color: #333;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+/* line 9, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin: 0 0 0.75em;
+}
+
+/* line 21, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_typography.scss */
+p {
+  margin: 0 0 0.75em;
+}
+
+/* line 25, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_typography.scss */
+a {
+  color: #1565c0;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip: ink;
+  -webkit-transition: color 150ms ease;
+  transition: color 150ms ease;
+}
+/* line 30, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_typography.scss */
+a:hover {
+  color: #104c90;
+}
+/* line 34, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_typography.scss */
+a:focus {
+  outline: 3px solid rgba(21, 101, 192, 0.6);
+  outline-offset: 2px;
+}
+
+/* line 40, C:/Sites/AdmissionTime/app/assets/stylesheets/base/_typography.scss */
+hr {
+  border-bottom: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 1.5em 0;
+}
+
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+/* line 8, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 18, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+/* line 31, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 50, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 61, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 70, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+/* line 79, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+template,
+[hidden] {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+/* line 92, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+/* line 102, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 115, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+/* line 125, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 134, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+/* line 143, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 152, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+/* line 161, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 170, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 179, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 187, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 191, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 202, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 210, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 222, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+/* line 234, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 243, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 257, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+/* line 269, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+optgroup {
+  font-weight: bold;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 278, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 288, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 299, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 310, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 322, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+/* line 333, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 346, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 359, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 368, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 378, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 388, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+/* line 397, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+/* line 406, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 416, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/normalize-rails-4.1.1/vendor/assets/stylesheets/normalize-rails/normalize.css */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, C:/Sites/AdmissionTime/vendor/assets/stylesheets/reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, C:/Sites/AdmissionTime/vendor/assets/stylesheets/reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, C:/Sites/AdmissionTime/vendor/assets/stylesheets/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, C:/Sites/AdmissionTime/vendor/assets/stylesheets/reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, C:/Sites/AdmissionTime/vendor/assets/stylesheets/reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, C:/Sites/AdmissionTime/vendor/assets/stylesheets/reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, C:/Sites/AdmissionTime/vendor/assets/stylesheets/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+} */
+/* ---------------------------
+
+Primary Style
+
+
+------------------------------- */
+/* line 8, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+html * {
+  -webkit-font-smoothing: antialised;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 13, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* line 17, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+body {
+  font-size: 100%;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #65676f;
+  background-color: #2e313d;
+}
+
+/* line 26, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+a {
+  text-decoration: none;
+}
+
+/* ---------------------------------
+
+Modules - reusable parts of our design
+
+------------------------------------- */
+/* line 26, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/neat-2.1.0/core/neat/mixins/_grid-container.scss */
+.cd-content::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* line 41, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.cd-container {
+  width: calc(83.3333333333% - 36.6666666667px);
+  float: left;
+  margin-left: 20px;
+  left: calc(8.3333333333% - 21.6666666667px + 20px);
+  position: relative;
+}
+
+/* -------------------------------
+
+Main components
+
+--------------------------------*/
+/* line 52, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.cd-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #03bb91;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+/* line 62, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.cd-header #cd-logo {
+  float: left;
+  margin: 13px 0 0 5%;
+}
+/* line 66, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.cd-header #cd-logo a {
+  display: block;
+  color: #fff;
+  font-size: 1.5em;
+}
+@media only screen and (min-width: 768px) {
+  /* line 52, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+  .cd-header {
+    height: 70px;
+  }
+  /* line 77, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+  .cd-header #cd-logo {
+    margin: 23px 0 0 5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 52, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+  .cd-header {
+    height: 70px;
+  }
+  /* line 85, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+  .cd-header #cd-logo {
+    margin: 23px 0 0 5%;
+  }
+}
+
+/* line 91, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.cd-main-nav {
+  float: right;
+  margin-right: 5%;
+  width: 44px;
+  height: 100%;
+  background: url("cd-icon-menu.svg") no-repeat center center;
+  background-size: 44px 44px;
+  cursor: pointer;
+}
+/* line 100, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.cd-main-nav ul {
+  position: absolute;
+  padding-left: 0;
+  margin-top: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+/* line 114, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.cd-main-nav a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 5%;
+  background: #2e313d;
+  border: 1px solid #353846;
+  color: #fff;
+}
+@media only screen and (min-width: 768px) {
+  /* line 91, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+  .cd-main-nav {
+    width: auto;
+    height: auto;
+    background: none;
+    cursor: auto;
+  }
+  /* line 130, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+  .cd-main-nav ul {
+    position: static;
+    width: auto;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    line-height: 70px;
+  }
+  /* line 136, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+  .cd-main-nav ul.is-visible {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  /* line 141, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+  .cd-main-nav li {
+    display: inline-block;
+    margin-left: 1em;
+  }
+  /* line 146, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+  .cd-main-nav a {
+    display: inline-block;
+    height: auto;
+    line-height: normal;
+    background: transparent;
+    padding: .6em 1em;
+    border-top: none;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+/* line 162, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.cd-nav-sub li {
+  list-style: none;
+  padding: 5px 10px;
+}
+/* line 166, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.cd-nav-sub > li {
+  float: left;
+}
+/* line 169, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.cd-nav-sub .sub-menu {
+  display: none;
+}
+
+/* line 173, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+#cd-intro {
+  position: relative;
+  height: 300px;
+  margin-top: 50px;
+  z-index: 1;
+}
+/* line 179, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+#cd-intro #cd-intro-background {
+  height: 100%;
+  width: 100%;
+  background: url("homepage.jpg") no-repeat center center;
+  background-size: cover;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+/* line 187, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+#cd-intro #cd-intro-tagline {
+  position: absolute;
+  width: 90%;
+  max-width: 1170px;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+/* line 194, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+#cd-intro h1 {
+  text-transform: uppercase;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (min-width: 768px) {
+  /* line 173, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+  #cd-intro {
+    height: 400px;
+    margin-top: 70px;
+  }
+  /* line 206, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+  #cd-intro h1 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  /* line 173, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+  #cd-intro {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    margin-top: 0;
+  }
+  /* line 219, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+  #cd-intro h1 {
+    font-size: 32px;
+  }
+}
+
+/* line 225, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.cd-content {
+  position: relative;
+  padding: 2em 0;
+  line-height: 1.6;
+  color: #65676f;
+  background-color: #f0f1e7;
+  z-index: 2;
+}
+/* line 233, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.cd-content::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(46, 49, 61, 0.5)), to(rgba(46, 49, 61, 0)));
+  background: linear-gradient(to top, rgba(46, 49, 61, 0.5), rgba(46, 49, 61, 0));
+}
+/* line 242, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.no-cssgradients .cd-content::before {
+  display: none;
+}
+/* line 247, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.cd-content h2 {
+  font-size: 20px;
+}
+/* line 251, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.cd-content p {
+  margin: 1em 0;
+}
+@media only screen and (min-width: 768px) {
+  /* line 225, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+  .cd-content {
+    line-height: 1.8;
+  }
+  /* line 259, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+  .cd-content h2 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  /* line 225, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+  .cd-content {
+    padding: 4em 0;
+    margin-top: 570px;
+  }
+  /* line 268, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+  .cd-content p {
+    font-size: 20px;
+  }
+}
+
+/* line 381, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.texture {
+  height: 5em;
+  width: 100%;
+}
+/* line 387, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.texture .texture-normal {
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/diagonal-noise.png"), -webkit-gradient(linear, left top, left bottom, from(#e1f2f1), to(#bae0de)), center no-repeat #e1f2f1 scroll;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/diagonal-noise.png"), linear-gradient(180deg, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
+  float: left;
+  height: 5em;
+  width: 50%;
+}
+/* line 395, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.texture .texture-inverted {
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/diagonal-noise.png"), -webkit-gradient(linear, left top, left bottom, from(#e1f2f1), to(#bae0de)), center no-repeat #e1f2f1 scroll;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/diagonal-noise.png"), linear-gradient(180deg, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
+  float: left;
+  height: 5em;
+  width: 50%;
+}
+
+/* line 406, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 412, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.card {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 4px #e6e6e6;
+          box-shadow: 0 2px 4px #e6e6e6;
+  cursor: pointer;
+  -ms-flex-preferred-size: 15em;
+      flex-basis: 15em;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0 1em 1.5em 1em;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 439, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.card .card-image {
+  background-color: #F8F2B4;
+  height: 150px;
+  max-height: 150px;
+  overflow: hidden;
+}
+/* line 445, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.card .card-image img {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+/* line 453, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.card .card-header {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ddd;
+  border-radius: 3px 3px 0 0;
+  font-weight: bold;
+  line-height: 1.5em;
+  padding: 0.5em 0.75em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 463, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.card .card-copy {
+  font-size: 0.9em;
+  line-height: 1.5em;
+  padding: 0.75em 0.75em;
+}
+/* line 468, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.card .card-copy p {
+  margin: 0 0 0.75em;
+}
+/* line 473, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.card:focus, .card:hover {
+  cursor: pointer;
+}
+/* line 477, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.card:focus img, .card:hover img {
+  opacity: 0.7;
+}
+/* line 482, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.card:active {
+  background-color: #f7f7f7;
+}
+/* line 485, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.card:active .card-header {
+  background-color: #f7f7f7;
+}
+
+/* line 494, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.flex-boxes {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+/* line 20, C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/bourbon-5.0.0.beta.8/core/bourbon/library/_clearfix.scss */
+.flex-boxes::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 522, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.flex-boxes .flex-box {
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  background: #f7f7f7;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 1px #ddd, 0 2px 4px #e6e6e6;
+          box-shadow: inset 0 0 1px #ddd, 0 2px 4px #e6e6e6;
+  display: block;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 2 15em;
+          flex: 2 2 15em;
+  margin: 0.4em;
+  padding: 2em 2em 3em 2em;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 536, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.flex-boxes .flex-box:nth-child(1) {
+  border-top: 6px solid tomato;
+}
+/* line 540, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.flex-boxes .flex-box:nth-child(1):focus, .flex-boxes .flex-box:nth-child(1):hover {
+  background-color: rgba(255, 99, 71, 0.1);
+}
+/* line 536, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.flex-boxes .flex-box:nth-child(2) {
+  border-top: 6px solid #72BFBF;
+}
+/* line 540, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.flex-boxes .flex-box:nth-child(2):focus, .flex-boxes .flex-box:nth-child(2):hover {
+  background-color: rgba(114, 191, 191, 0.1);
+}
+/* line 536, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.flex-boxes .flex-box:nth-child(3) {
+  border-top: 6px solid #92B1E3;
+}
+/* line 540, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.flex-boxes .flex-box:nth-child(3):focus, .flex-boxes .flex-box:nth-child(3):hover {
+  background-color: rgba(146, 177, 227, 0.1);
+}
+/* line 536, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.flex-boxes .flex-box:nth-child(4) {
+  border-top: 6px solid #E3D743;
+}
+/* line 540, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.flex-boxes .flex-box:nth-child(4):focus, .flex-boxes .flex-box:nth-child(4):hover {
+  background-color: rgba(227, 215, 67, 0.1);
+}
+/* line 536, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.flex-boxes .flex-box:nth-child(5) {
+  border-top: 6px solid #CCC;
+}
+/* line 540, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.flex-boxes .flex-box:nth-child(5):focus, .flex-boxes .flex-box:nth-child(5):hover {
+  background-color: rgba(204, 204, 204, 0.1);
+}
+/* line 536, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.flex-boxes .flex-box:nth-child(6) {
+  border-top: 6px solid #F6C05C;
+}
+/* line 540, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.flex-boxes .flex-box:nth-child(6):focus, .flex-boxes .flex-box:nth-child(6):hover {
+  background-color: rgba(246, 192, 92, 0.1);
+}
+/* line 547, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.flex-boxes .flex-box img {
+  display: block;
+  height: 8em;
+  margin: 0 auto 1em;
+}
+/* line 554, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.flex-boxes .flex-box .flex-title {
+  color: rgba(51, 51, 51, 0.7);
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+/* line 560, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.flex-boxes .flex-box p {
+  color: rgba(51, 51, 51, 0.6);
+  line-height: 1.5em;
+  margin: auto;
+}
+/* line 567, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.flex-boxes .flex-box-big {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40em;
+          flex: 1 1 40em;
+}
+
+/* line 573, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.content {
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 1200px;
+  min-width: 300px;
+}
+
+/* line 581, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.slick-slider {
+  margin: 30px auto 50px;
+}
+
+/* line 585, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.slick-prev,
+.slick-next {
+  color: white;
+  opacity: 1;
+  height: 40px;
+  width: 40px;
+  margin-top: -20px;
+}
+/* line 593, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.slick-prev path,
+.slick-next path {
+  fill: rgba(255, 255, 255, 0.4);
+}
+/* line 598, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.slick-prev:hover path,
+.slick-next:hover path {
+  fill: #FFFFFF;
+}
+
+/* line 604, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.slick-prev {
+  left: -35px;
+}
+
+/* line 608, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.slick-next {
+  right: -35px;
+}
+
+/* line 612, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.slick-prev:before,
+.slick-next:before {
+  content: none;
+}
+
+/* line 617, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.slick-dots li button:before {
+  color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+  font-size: 8px;
+}
+
+/* line 623, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.slick-dots li.slick-active button:before {
+  color: #FFFFFF;
+}
+
+/* line 627, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.quote-container {
+  min-height: 200px;
+  color: #666666;
+  font-size: 36px;
+  margin: 0 20px;
+  position: relative;
+}
+/* line 634, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.quote-container:hover {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+/* line 638, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.quote-container .portrait {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 140px;
+  width: 140px;
+  overflow: hidden;
+}
+/* line 649, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.quote-container .portrait img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+/* line 656, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.quote-container .quote {
+  position: relative;
+  z-index: 600;
+  padding: 40px 0 40px 180px;
+  margin: 0;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.4 !important;
+  font-family: Calibri;
+  color: white;
+}
+/* line 668, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.quote-container .quote p {
+  position: relative;
+  margin-bottom: 20px;
+}
+/* line 672, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.quote-container .quote p:first-child:before {
+  content: '\201C';
+  color: rgba(255, 255, 255, 0.44);
+  font-size: 7.5em;
+  font-weight: 700;
+  opacity: 1;
+  position: absolute;
+  top: -.4em;
+  left: -.2em;
+  text-shadow: none;
+  z-index: -10;
+}
+/* line 686, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.quote-container .quote cite {
+  display: block;
+  font-size: 14px;
+}
+/* line 690, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.quote-container .quote cite span {
+  font-size: 16px;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* line 700, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.dragging .quote-container {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* line 704, C:/Sites/AdmissionTime/app/assets/stylesheets/style.scss */
+.octogon {
+  -webkit-clip-path: polygon(50% 0%, 38.11% 6.7%, 24.99% 6.72%, 18.06% 18.44%, 6.7% 25%, 6.56% 38.64%, 0% 50%, 6.7% 61.89%, 6.7% 75%, 18.44% 81.94%, 25% 93.3%, 38.64% 93.44%, 50% 100%, 61.88% 93.3%, 75% 93.3%, 81.94% 81.56%, 93.3% 74.9%, 93.44% 61.36%, 100% 50%, 93.3% 38.11%, 93.3% 25%, 81.56% 18.06%, 74.96% 6.7%, 61.36% 6.56%, 50% 0%);
+  clip-path: url(#octogon);
+  height: 140px;
+  width: 140px;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 5% 0%;
+  }
+  50% {
+    background-position: 96% 100%;
+  }
+  100% {
+    background-position: 5% 0%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 5% 0%;
+  }
+  50% {
+    background-position: 96% 100%;
+  }
+  100% {
+    background-position: 5% 0%;
+  }
+}

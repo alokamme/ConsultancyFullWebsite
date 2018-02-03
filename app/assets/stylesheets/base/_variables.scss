@@ -1,0 +1,65 @@
+
+// Typography
+$base-font-family: "Ubuntu", sans-serif;
+$heading-font-family: $base-font-family;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: 1.5em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$blue: #1565c0;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+
+// Font Colors
+$base-font-color: $dark-gray;
+$action-color: $blue;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: #fff;
+$secondary-background-color: tint($base-border-color, 75%);
+
+// Focus
+$focus-outline-color: transparentize($action-color, 0.4);
+$focus-outline-width: 3px;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 2px;
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
+
+
+//	colors
+
+$background: #2e313d; // body background color
+$color-1: #03bb91; // teal
+$color-2: #f0f1e7; // cream
+$color-3: #65676f; // blue text
+
+// header height
+
+$header-height-S: 50px;
+$header-height-M: 70px;
+
+// intro height
+
+$intro-height-S: 300px;
+$intro-height-M: 400px;
+$intro-height-L: 500px;
+
+// z-index - order the elements from the lowest z-index(left) to the heighest(right)
+
+$elements: intro-image, main-content, navigation;

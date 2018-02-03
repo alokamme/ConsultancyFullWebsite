@@ -1,0 +1,79 @@
+
+<header class="cd-header">
+<div class="ui text menu">
+  <div class="item">
+  	<%= link_to index_path do %>
+    <%= image_tag("menu.png") %>
+    <% end %>
+  </div>
+<!--   Your menu button  -->
+  <a class="browse item">
+    <strong>Browse Courses</strong>
+    <i class="dropdown icon"></i>
+  </a>
+  <div class="ui right dropdown item">
+  	<strong>More</strong>
+  	<i class="dropdown icon"></i>
+  	<div class="menu">
+  		<div class="item"><%= link_to "About Us", about_path %></div>
+  		<div class="item">Services</div>
+  		<div class="item"><%= link_to "Contact", contacts_path %></div>
+  	</div>
+  </div>
+  
+  <div class="item">
+    <div class="ui transparent icon input">
+      <input type="text" placeholder="Search...">
+      <i class="search icon"></i>
+    </div>
+  </div>
+  <button class="ui active button">
+     <i class="user icon"></i>
+     <%= link_to "Apply", new_item_path, class: 'link-to-text-color' %>
+ </button
+ <!--   Your menu button  -->
+</div>
+<!-- Your Popup Content -->
+<div class="ui flowing basic admission popup">
+  <div class="ui three column relaxed divided grid">
+    <div class="column">
+      <h4 class="ui header"><%= link_to "Medical Overview", course_path %></h4>
+      <div class="ui link list">
+        <%= link_to "MBBS - Abroad", medical_overview_path, class: 'item' %>
+        <a class="item">Paramedical</a>
+        <a class="item">BDS</a>
+      </div>
+    </div>
+    <div class="column">
+      <h4 class="ui header">Architecture</h4>
+       <h4 class="ui header">Engineering</h4>
+        <h4 class="ui header">Management</h4>
+         
+    </div>
+    <div class="column">
+     <h4 class="ui header">Law</h4>
+     <h4 class="ui header">Fashion Design</h4>
+     <h4 class="ui header">Journalism</h4>
+    </div>
+    
+  </div>
+    <strong>Top Countries</strong>
+<a class="ui image label">
+  <i class="russia flag"></i>
+  Russia
+</a>
+<a class="ui image label">
+  <i class="bangladesh flag"></i>
+  Bangladesh
+</a>
+<a class="ui image label">
+  <i class="kazakhstan flag"></i>
+  Kazakhstan
+</a>
+<a class="ui image label">
+  <i class="ukraine flag"></i>
+  Ukraine
+</a>
+  
+</div>
+</header>

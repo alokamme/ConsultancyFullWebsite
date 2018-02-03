@@ -1,0 +1,84 @@
+<div class="cd-container">
+<%= form_with(model: item, local: true) do |form| %>
+  <% if item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(item.errors.count, "error") %> prohibited this item from being saved:</h2>
+
+      <ul>
+      <% item.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="ui form">
+  <div class="three fields">
+    <div class="field">
+      <label>Name</label>
+      <%= form.text_field :name, id: :item_name, placeholder: "Name" %>
+    </div>
+    <div class="field">
+      <label>Phone</label>
+      <%= form.text_field :phone, id: :item_phone, placeholder: "Phone" %>
+    </div>
+    <div class="field">
+      <label>Preferred Country</label>
+      <%= form.text_field :preferred_country, id: :item_preferred_country, placeholder: "Preferred Country" %>
+    </div>
+  </div>
+</div>
+<div class="ui form">
+  <div class="two fields">
+    <div class="field">
+      <label>Email</label>
+      <%= form.text_field :email, id: :item_email, placeholder: "userid@example.com" %>
+    </div>
+    <div class="field">
+      <label>Passport Number</label>
+      <%= form.text_field :passport, id: :item_passport, placeholder: "Passport Number" %>
+    </div>
+  </div>
+</div>
+  <div class="ui form">
+    <div class=" three fields">
+      <div class="field">
+      <label>Date of Birth</label>
+      <%= form.date_select :dob, id: :item_dob, :start_year => 1980, placeholder: "Date of Birth" %>
+      </div>
+      <div class="field">
+      <label>Passport Validity Date</label>
+      <%= form.date_select :passport_validity_date, id: :item_passport_validity_date, placeholder: "Date" %>
+      </div>
+    </div>
+  </div>
+   <div class="ui form">
+    <div class=" two fields">
+    <div class="field">
+    <%= form.label :picture %>
+    <%= form.file_field :picture %>
+  </div>
+  <div class="field">
+        <%= form.label :document %>
+        <%= form.file_field :documet %>
+  </div>
+</div>
+</div>
+
+    <div class="ui form">
+    <div class="field">
+      <label>Message</label>
+      <%= form.text_area :message, id: :item_message, placeholder: "Message" %>
+    </div>
+  </div>
+  <div class="ui buttons">
+  <button class="ui positive button">
+    <div class="actions">
+    <%= form.submit %>
+    </div>
+  </button>
+  <div class="or"></div>
+  <button class="ui button"><%= link_to 'Cancel', index_path %></button>
+</div>
+  
+<% end %>
+</div>

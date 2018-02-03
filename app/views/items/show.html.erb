@@ -1,0 +1,52 @@
+<div class="cd-contnent">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @item.name %>
+</p>
+
+<%= image_tag(@item.picture.url, alt: 'Image') %>
+<p>
+  <strong>Photo:</strong>
+  <%= @item.picture %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @item.phone %>
+</p>
+
+<p>
+  <strong>Dob:</strong>
+  <%= @item.dob %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @item.email %>
+</p>
+
+<p>
+  <strong>Passport:</strong>
+  <%= @item.passport %>
+</p>
+
+<p>
+  <strong>Passport validity date:</strong>
+  <%= @item.passport_validity_date %>
+</p>
+
+<p>
+  <strong>Preferred country:</strong>
+  <%= @item.preferred_country %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @item.message %>
+</p>
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>
+</div>

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  phone: 1
+  dob: 2017-12-13 02:36:16
+  email: MyString
+  passport: MyString
+  passport_validity_date: 2017-12-13 02:36:16
+  preferred_country: MyString
+  message: MyText
+
+two:
+  name: MyString
+  phone: 1
+  dob: 2017-12-13 02:36:16
+  email: MyString
+  passport: MyString
+  passport_validity_date: 2017-12-13 02:36:16
+  preferred_country: MyString
+  message: MyText
