@@ -12,15 +12,15 @@
 
 ActiveRecord::Schema.define(version: 20171216173637) do
 
-  create_table "documents", force: :cascade do |t|
-    t.integer "item_id"
+  create_table "documents", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.bigint "item_id"
     t.string "document"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["item_id"], name: "index_documents_on_item_id"
   end
 
-  create_table "items", force: :cascade do |t|
+  create_table "items", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
     t.string "phone"
     t.date "dob"
@@ -34,4 +34,5 @@ ActiveRecord::Schema.define(version: 20171216173637) do
     t.string "picture"
   end
 
+  add_foreign_key "documents", "items"
 end
